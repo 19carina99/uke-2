@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <u> Bindi :) </u> </h1>
+    <img src="https://scontent.fsvg1-1.fna.fbcdn.net/v/t1.18169-9/317685_452553744785643_2046933757_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ba80b0&_nc_ohc=Z69QJ8jm8K0AX-MV1Rz&_nc_ht=scontent.fsvg1-1.fna&oh=32387c95007073f95d860787eae6a8c4&oe=61A11434" style="height: 250px;" width="175px"/>
+    <div onmouseover="testOnmouseOver()" onmouseout="testOnmouseOut()"><u>heihei</u></div>
+    <input type="text" onchange="OnchangeTest()" oninput="OninputTest()">
+    <p ondblclick="OndblclickTest()"> <u>double-click</u></p> 
+    <input onkeydown="OnkeydownTest()">
+    <div oncontextmenu="OncontextmenuTest()" contextmenu="mymenu"><u>mymeny</u></div>
+    <h2 id="hehe"></h2>
+
+</body>
+<script>
+    function testOnmouseOver(){
+        console.log('send funksjon');
+       document.getElementById('hehe').innerHTML += '<li>hei</li>';
+    }
+    function testOnmouseOut(){
+        console.log('send funksjon');
+       document.getElementById('hehe').innerHTML += '<li>hade</li>';
+    }
+    function OnchangeTest(){
+        console.log('send funksjon');
+        document.getElementById('hehe').innerHTML += '<li>haha</li>'
+    }
+    function OninputTest(){
+        console.log('send funksjon');
+        document.getElementById('hehe').innerHTML += '<li>hoho</li>'
+    }
+    function OndblclickTest(){
+        console.log('send funksjon');
+        document.getElementById('hehe').innerHTML += '<li>hihi</li>'
+    }
+    function OncontextmenuTest(){
+        console.log('send funksjon');
+        document.getElementById('hehe').innerHTML += '<li>huhu</li>'
+    }
+    function OnkeydownTest(){
+        console.log('send funksjon');
+        document.getElementById('hehe').innerHTML += '<li>høhø</li>'
+    }
+
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <button onclick="tell(this)">1</button>
+    <button onclick="tell(this)">2</button>
+    <button onclick="tell(this)">3</button>
+    <button onclick="tell(this)">4</button>
+    <button onclick="tell(this)">5</button>
+    <button onclick="tell(this)">6</button>
+    <button onclick="tell(this)">7</button>
+    <button onclick="tell(this)">8</button>
+    <button onclick="tell(this)">9</button>
+    <br>
+
+    <div id="koden"></div>
+    <button onclick="Answer(this)">Click to check</button>
+
+    <script>
+        let userinput = "";
+        let password = "3812";
+        
+     function tell(element){
+        document.getElementById('koden').innerHTML += element.innerHTML;
+        userinput += element.innerHTML;
+     }
+     function Answer(element){
+         console.log('userinput = ' + userinput);
+    if (userinput == password) {
+        alert("Riktig :) Bra jobba :)");
+    }
+    else{
+        alert("Feil :/ Prøv igjen :)")
+    }
+     }
+     
+    </script>
+</body>
+</html>

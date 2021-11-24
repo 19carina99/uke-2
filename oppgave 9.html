@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .round{
+            border: 4px solid black;
+            border-radius: 5px;
+        }
+        .square{
+            border: 4px dashed coral;
+            border-radius: 3px;
+        }
+        .circle{
+            border: 4px dotted blueviolet;
+            border-radius: 1px;
+        }
+        .triangle{
+            border: 4px double black;
+            border-radius: 7px;
+        }
+        .diamond{
+            border: 4px outset royalblue;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oppgave 9 uke 2</h1>
+    <input id="text" type="text"/>
+    <input >
+</br>
+    <h2 id="overskrift"> Sjekk hva som skjer! </h2>
+</br>
+    <button onclick="doSomething1(this)">1</button>
+    <button onclick="doSomething2(this)">2</button>
+    <button onclick="doSomething3(this)">3</button>
+    <button onclick="doSomething4(this)">4</button>
+    <button onclick="doSomething5(this)">5</button>
+
+<script>
+    var textInput = document.getElementById('text');
+    var h2Element = document.getElementById('overskrift');
+
+    function doSomething1(clickedElement){
+        textInput.style.backgroundColor = 'pink';
+        h2Element.style.backgroundColor = 'pink';
+        clickedElement.style.backgroundColor = 'pink';
+
+        textInput.style.color = 'black';
+        h2Element.style.color = 'black';
+        clickedElement.style.color = 'black';
+
+        textInput.classList.add('round');
+        h2Element.classList.add('round');
+        clickedElement.classList.add('round');
+
+        textInput.value = "knapp 1 er valgt";
+    }
+
+    function doSomething2(clickedElement){
+        textInput.style.backgroundColor = 'blue';
+        h2Element.style.backgroundColor = 'blue';
+        clickedElement.style.backgroundColor = 'blue';
+
+        textInput.style.color = '';
+        h2Element.style.color = '';
+        clickedElement.style.color = '';
+
+        textInput.classList.remove('round' && 'circle' && 'triangle' && 'diamond');
+        h2Element.classList.remove('round' && 'circle' && 'triangle' && 'diamond');
+        clickedElement.classList.remove('round' && 'circle' && 'triangle' && 'diamond');
+
+        textInput.classList.add('square');
+        h2Element.classList.add('square');
+        clickedElement.classList.add('square')
+
+        textInput.value = "knapp 2 er valgt";
+    }
+
+    function doSomething3(clickedElement){
+        textInput.style.backgroundColor = 'green';
+        h2Element.style.backgroundColor = 'green';
+        clickedElement.style.backgroundColor = 'green';
+
+        textInput.style.color = '';
+        h2Element.style.color = '';
+        clickedElement.style.color = '';
+
+        textInput.classList.remove('round' && 'square' && 'triangle' && 'diamond');
+        h2Element.classList.remove('round' && 'square' && 'triangle' && 'diamond');
+        clickedElement.classList.remove('round' && 'square' && 'triangle' && 'diamond');
+
+        textInput.classList.add('circle');
+        h2Element.classList.add('circle');
+        clickedElement.classList.add('circle');
+
+        textInput.value = "knapp 3 er valgt";
+    }
+
+    function doSomething4(clickedElement){
+        textInput.style.backgroundColor = 'red';
+        h2Element.style.backgroundColor = 'red';
+        clickedElement.style.backgroundColor = 'red';
+
+        textInput.style.color = '';
+        h2Element.style.color = '';
+        clickedElement.style.color = '';
+
+        textInput.classList.remove('round' && 'square' && 'circle' && 'diamond');
+        h2Element.classList.remove('round' && 'square' && 'circle' && 'diamond');
+        clickedElement.classList.remove('round' && 'square' && 'circle' && 'diamond');
+
+        textInput.classList.add('triangle');
+        h2Element.classList.add('triangle');
+        clickedElement.classList.add('triangle');
+
+        textInput.value = "knapp 4 er valgt";
+    }
+
+    function doSomething5(clickedElement){
+        textInput.style.backgroundColor = 'grey';
+        h2Element.style.backgroundColor = 'grey';
+        clickedElement.style.backgroundColor = 'grey';
+
+        textInput.style.color = '';
+        h2Element.style.color = '';
+        clickedElement.style.color = '';
+
+        textInput.classList.remove('round' && 'square' && 'circle' && 'triangle');
+        h2Element.classList.remove('round' && 'square' && 'circle' && 'triangle');
+        clickedElement.classList.remove('round' && 'square' && 'circle' && 'triangle');
+
+        textInput.classList.add('diamond');
+        h2Element.classList.add('diamond');
+        clickedElement.classList.add('diamond');
+
+        textInput.value = "knapp 5 er valgt";
+    }
+</script>
+</body>
+</html>

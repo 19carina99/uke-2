@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Oppgave 6 uke 2</h1>
+
+    <input id="sliderSize" type="range" min="0" max="400" step="20" onclick="showDiv()">
+    <input id="borderRadius" type="range" min="0" max="100" step="10" oninput="showDiv()">
+    <br>
+    <input id="inputText" type="text" oninput="showDiv()" value="Endre tekst">
+
+    <select id="chooseColor" onchange="showDiv()">
+    <option value="blue"> Blue </option>
+    <option value="orange"> Orange </option>
+    <option value="purple"> Purple </option>
+    </select>
+
+    <select id="borderColor" onchange="showDiv()">
+    <option value ="solid black"> Black Border </option>
+    <option value="solid grey"> Grey Border </option>
+    <option value="none"> No Border </option>    
+    </select>
+    
+    <div id="resultat"></div>
+    <div id="resultatHTML" style="font-family: serif;"></div>
+
+    <script>
+    var resultatDiv = document.getElementById('resultat');
+    var resultatHTMLDiv = document.getElementById('resultatHTML');
+    var sizeSlider = document.getElementById('sliderSize');
+    var textInput = document.getElementById('inputText');
+    var colorChooser = document.getElementById('chooseColor');
+    var borderColor = document.getElementById('borderColor');
+    var borderRadius = document.getElementById('borderRadius');
+
+    showDiv();
+
+    function showDiv() {
+        resultatDiv.innerHTML = '<div style="'
+        + 'background-color: ' + colorChooser.value + ';'
+        + 'width: ' + sizeSlider.value + 'px;'
+        + 'height: ' + sizeSlider.value + 'px;'
+        + 'border: ' + borderColor.value + ';'
+        + 'border-radius: ' + borderRadius.value + 'px;'
+        + '">' +
+        textInput.value + '</div>';
+        resultatHTMLDiv.innerText = resultatDiv.innerHTML;
+    }  
+    
+
+    //showDivBorder();
+
+    //function showDivBorder(){
+    //    resultatDiv.innerHTML = '<div style="'
+    //    + 'border: ' + borderChooser.value + ';'
+    //   + 'border-color: ' + borderChooser.value + '5px;'
+    //    + 'border-radius: ' + borderRadius.value + '5px;'
+    //    + '">' +
+    //    borderRadius.value + '</div>';
+    //    resultatHTMLDiv.innerText = resultatDiv.innerHTML; 
+    //}
+ 
+    </script>
+</body>
+</html>

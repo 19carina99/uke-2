@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td{
+        border: solid black; width: 40px; height: 40px;
+    }
+</style>
+<body>
+    <h1><u>Tabell oppgave</u></h1>
+    <table >
+        <tr>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+        </tr>
+        <tr>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+        </tr>
+        <tr>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+            <td onmouseover="doSomething(this)" onmouseout="didSomething(this)"> o </td>
+        </tr>
+    </table>
+
+    <script>
+        function doSomething(Heihå){
+            Heihå.innerHTML = 'x';
+        }
+        function didSomething(EttEllerAnnet){
+            EttEllerAnnet.innerHTML = 'o';
+        }
+    </script>
+</body>
+</html>

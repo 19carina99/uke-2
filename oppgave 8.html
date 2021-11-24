@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Refresh siden for nye størrelse på boksen!:)</h1>
+
+    <div id="resultat"></div>
+    <br>
+    <div id="resultatHTML"></div>
+
+    <script>
+        var resultatDiv = document.getElementById('resultat'); 
+        var resultatHTMLDiv = document.getElementById('resultatHTML');
+
+        showDiv();
+
+        function showDiv(){
+            var height = 100 + Math.floor(Math.random() * 10);
+            var width = 100 + Math.floor(Math.random() * 10);
+            var random = 1 + Math.floor(Math.random() * 10);
+
+            resultatDiv.innerHTML = '<div style="'
+            + 'height:' + height + 'px;'
+            + 'width:' + width + 'px;'
+            + 'background-color: ' + 'pink' + ';'
+            + 'border: ' + random + 'px solid black;'
+            + '">' + '</div>'; 
+            resultatHTMLDiv.innerText = 'width:' + width + ';' + 
+            'height:' + height + ';'
+        }
+
+    </script>
+</body>
+</html>

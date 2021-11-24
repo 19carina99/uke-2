@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+        }
+    </style>
+</head>
+<body onload="load()">
+    <h1>Last Siden På Nytt!</h1>
+    <img onload="bilde()" src="https://scontent.fsvg1-1.fna.fbcdn.net/v/t1.6435-9/78796371_3326988224008833_4271997106526355456_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=e3f864&_nc_ohc=GQ5ujh8BMXoAX-gzGXB&_nc_ht=scontent.fsvg1-1.fna&oh=4356664f4f73081ce65416b6f67a5a2d&oe=61A9983E">
+    <div id="id" > </div>
+    <div id="bilde"></div>
+
+    <script>
+        // function doClick{
+        //     document.getElementById('refresh').innerHTML = 
+
+        // }
+
+        // function id{
+        //     document.getElementById('time').innerHTML = '' + new Date().toTimeString();
+        // }
+        function load(){
+            document.getElementById('id').innerHTML = 'Tid: ' + new Date().toTimeString();
+        }
+        function bilde(){
+            document.getElementById('bilde').innerHTML = 'bilde tid' + new Date().toTimeString();
+        }
+    </script>
+</body>
+</html>
